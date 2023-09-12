@@ -1,0 +1,31 @@
+.footer {
+  max-width: 492px;
+  min-height: 9.0625rem;
+  padding: 4.5981rem auto;
+  background-color: white;
+  text-align: center;
+}
+
+.footer .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .socials {
+  display: flex;
+  gap: 3rem;
+}
+
+.content .socials img {
+  width: 1.5rem;
+  height: 1.7143rem;
+}
+
+.content .terms {
+  display: flex;
+  gap: 3rem;
+  font-weight: 700;
+}
