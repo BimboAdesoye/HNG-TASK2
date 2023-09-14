@@ -1,10 +1,10 @@
 import "../styles/Hero.css";
-import heroBackground from "../assets/Poster.svg";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
     <div className="hero">
-      <img src={heroBackground} alt="" />
+      <Navbar />
     </div>
   );
 };

@@ -2,14 +2,18 @@ import imdbIcon from "../assets/MV5BMTk3ODA4Mjc0NF5BMl5BcG5nXkFtZTgwNDc1MzQ2OTE@
 import tomatoIcon from "../assets/PngItem_1381056 1.png";
 import "../styles/MovieCard.css";
 import { Link } from "react-router-dom";
+import heartactive from "../assets/Heart.svg";
+import heartDormant from "../assets/Heart-dormant.svg";
 
-const MovieCard = ({ data }) => {
+const MovieCard = ({ data, toggleFavorite, favorites }) => {
   const { poster_path, id } = data;
   const image_path = " https://image.tmdb.org/t/p/w500";
 
-  //   useEffect(() => {
-  //     console.log(data);
-  //   }, [data.title]);
+  const isFavorite = favorites[id] || false;
+
+  const handleFavoriteClick = () => {
+    toggleFavorite(id);
+  };
 
   return (
     <div className="movie-card" data-testid="movie-card">
@@ -26,10 +30,21 @@ const MovieCard = ({ data }) => {
         ) : (
           <div className="movie-placeholder">No image found</div>
         )}
+        <div onClick={handleFavoriteClick} className="heart-ellipse">
+          {isFavorite ? (
+            <img src={heartactive} alt="" />
+          ) : (
+            <img src={heartDormant} alt="" />
+          )}
+        </div>
       </div>
       <div className="card-details">
-        <p className="release-date">Release Date (UTC): {data.release_date}</p>
-        <h5 className="movie-title">{data.title}</h5>
+        <p className="release-date" data-testid="movie-release-date">
+          Release Date (UTC): {data.release_date}
+        </p>
+        <h5 className="movie-title" data-testid="movie-title">
+          {data.title}
+        </h5>
         <div className="ratings flex justify-between">
           <span className="flex gap">
             <img src={imdbIcon} alt="imbd-icon" />

@@ -2,7 +2,7 @@
 
 .sidebar {
   height: 100vh;
-  max-width: 226px;
+  min-width: 226px;
   border-top-right-radius: 45px;
   border-bottom-right-radius: 45px;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -86,4 +86,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.active {
+  background: rgba(190, 18, 60, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
 }

@@ -82,8 +82,9 @@ svg {
 
 /* General Styling */
 .container {
-  max-width: 1244px;
+  max-width: 1276px;
   margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 /* Utility Classes */

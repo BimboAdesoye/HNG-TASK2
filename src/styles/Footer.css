@@ -1,9 +1,10 @@
 .footer {
   max-width: 492px;
   min-height: 9.0625rem;
-  padding: 4.5981rem auto;
+  padding-bottom: 3rem;
   background-color: white;
   text-align: center;
+  margin-inline: auto;
 }
 
 .footer .content {
@@ -28,4 +29,8 @@
   display: flex;
   gap: 3rem;
   font-weight: 700;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

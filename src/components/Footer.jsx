@@ -5,23 +5,26 @@ import youtubeIcon from "../assets/fa-brands_youtube.svg";
 import "../styles/Footer.css";
 
 const Footer = () => {
-  
   return (
-    <div className="footer container">
-      <div className="content">
-        <div className="socials">
-          <img src={facebookIcon} alt="" />
-          <img src={instagramIcon} alt="" />
-          <img src={twitterIcon} alt="" />
-          <img src={youtubeIcon} alt="" />
-        </div>
-        <div className="terms">
-          <p className="text-base">Conditions of Use</p>
-          <p className="text-base">Privacy & Policy</p>
-          <p className="text-base">Press Room</p>
-        </div>
-        <div>
-          <p className="text-base">© 2021 MovieBox by Adriana Eka Prayudha </p>
+    <div className="footer">
+      <div className="container">
+        <div className="content">
+          <div className="socials">
+            <img className="cursor-pointer" src={facebookIcon} alt="" />
+            <img className="cursor-pointer" src={instagramIcon} alt="" />
+            <img className="cursor-pointer" src={twitterIcon} alt="" />
+            <img className="cursor-pointer" src={youtubeIcon} alt="" />
+          </div>
+          <div className="terms">
+            <p className="text-base cursor-pointer">Conditions of Use</p>
+            <p className="text-base cursor-pointer">Privacy & Policy</p>
+            <p className="text-base cursor-pointer">Press Room</p>
+          </div>
+          <div>
+            <p className="text-base">
+              © 2021 MovieBox by Adriana Eka Prayudha{" "}
+            </p>
+          </div>
         </div>
       </div>
     </div>

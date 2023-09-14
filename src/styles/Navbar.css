@@ -1,0 +1,38 @@
+.brand-name {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.navbar {
+  padding-block: 1.5rem;
+}
+
+.nav-logo {
+  gap: 24px;
+}
+
+.sign-in {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  /* line-height: 24px; */
+}
+
+.menu {
+  gap: 27px;
+  /* width: 300px; */
+}
+
+.menu-img {
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 967px) {
+  .brand-name,
+  .sign-in {
+    display: none;
+  }
+}

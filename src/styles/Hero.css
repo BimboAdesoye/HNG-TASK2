@@ -1,8 +1,12 @@
 .hero {
   width: 100%;
   min-height: 600px;
+  background-image: url('../assets/Poster.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero img {
-  width: 100%;
+  /* width: 100%; */
 }

@@ -9,41 +9,39 @@ import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
-    <div>
-      <div className="sidebar">
-        <Link to={'/'} className="link">
-          <div className="logo flex justify-center">
-            <img src={logo} alt="logo" />
-            <p>MovieBox</p>
-          </div>
-        </Link>
-        <div className="tabs">
-          <div className="flex">
-            <img src={home} alt="" />
-            <p>Home</p>
-          </div>
-          <div className="flex">
-            <img src={movie} alt="" />
-            <p>Movies</p>
-          </div>
-          <div className="flex">
-            <img src={tv} alt="" />
-            <p> TV Series</p>
-          </div>
-          <div className="flex">
-            <img src={calendar} alt="" />
-            <p>Upcoming</p>
-          </div>
+    <div className="sidebar">
+      <Link to={"/"} className="link">
+        <div className="logo flex justify-center">
+          <img src={logo} alt="logo" />
+          <p>MovieBox</p>
         </div>
-        <div className="start-playing">
-          <p className="play">Play movie quizes and earn free tickets</p>
-          <p className="people">50k people are playing now</p>
-          <p className="btn">Start playing</p>
+      </Link>
+      <div className="tabs">
+        <div className="flex">
+          <img src={home} alt="" />
+          <p>Home</p>
         </div>
-        <div className="log-out flex">
-          <img src={logoutIcon} alt="" />
-          <p>Log Out</p>
+        <div className="flex active">
+          <img src={movie} alt="" />
+          <p>Movies</p>
         </div>
+        <div className="flex">
+          <img src={tv} alt="" />
+          <p> TV Series</p>
+        </div>
+        <div className="flex">
+          <img src={calendar} alt="" />
+          <p>Upcoming</p>
+        </div>
+      </div>
+      <div className="start-playing">
+        <p className="play">Play movie quizes and earn free tickets</p>
+        <p className="people">50k people are playing now</p>
+        <p className="btn">Start playing</p>
+      </div>
+      <div className="log-out flex">
+        <img src={logoutIcon} alt="" />
+        <p>Log Out</p>
       </div>
     </div>
   );

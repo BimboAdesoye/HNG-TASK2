@@ -33,3 +33,28 @@
   column-gap: 80px;
   row-gap: 100px;
 }
+
+@media screen and (max-width: 992px) {
+  .movie-card-container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .movie-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .movie-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .header .feature {
+    font-size: 30px;
+  }
+}
