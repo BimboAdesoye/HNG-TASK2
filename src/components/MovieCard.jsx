@@ -3,7 +3,7 @@ import tomatoIcon from "../assets/PngItem_1381056 1.png";
 import "../styles/MovieCard.css";
 import { Link } from "react-router-dom";
 import heartactive from "../assets/Heart.svg";
-import heartDormant from "../assets/Heart-dormant.svg";
+import redHeartIcon from "../assets/icons8-heart-suit-48.png";
 
 const MovieCard = ({ data, toggleFavorite, favorites }) => {
   const { poster_path, id } = data;
@@ -30,11 +30,11 @@ const MovieCard = ({ data, toggleFavorite, favorites }) => {
         ) : (
           <div className="movie-placeholder">No image found</div>
         )}
-        <div onClick={handleFavoriteClick} className="heart-ellipse">
+        <div onClick={handleFavoriteClick} className="heart-ellipse cursor-pointer">
           {isFavorite ? (
-            <img src={heartactive} alt="" />
-          ) : (
-            <img src={heartDormant} alt="" />
+            <img className="red-heart-icon" src={redHeartIcon} alt="" />
+            ) : (
+              <img src={heartactive} alt="" />
           )}
         </div>
       </div>

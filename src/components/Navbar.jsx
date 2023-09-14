@@ -12,7 +12,7 @@ const Navbar = () => {
         <img className="nav-logo-img" src={logo} alt="logo" />
         <p className="brand-name">MovieBox</p>
       </div>
-      {/* <SearchBar/> */}
+      <SearchBar/>
       <div className="flex menu">
         <p className="sign-in">Sign in</p>
         <img className="menu-img" src={Menu} alt="logo" />

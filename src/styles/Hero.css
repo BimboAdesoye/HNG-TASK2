@@ -1,12 +1,73 @@
 .hero {
   width: 100%;
   min-height: 600px;
-  background-image: url('../assets/Poster.svg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.hero img {
-  /* width: 100%; */
+.hero .hero-image {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  mix-blend-mode: darken;
+}
+
+.hero-movie-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 404px;
+  margin-left: 0;
+  min-height: 285px;
+  margin-top: 6rem;
+  gap: 1rem;
+}
+
+.hero-movie-title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.hero-movie-overview {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.hero-movie-button {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: var(--rose-700, #be123c);
+  border: none;
+  outline: none;
+  max-width: 200px;
+}
+
+.hero-movie-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.hero-movie-button p {
+  color: var(--white, #fff);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.hero-movie-rating {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero-movie-rating span p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
 }

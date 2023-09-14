@@ -12,12 +12,14 @@
 }
 
 .movie-details-img {
-  /* width: 100%; */
   height: 449px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .watch-video {
@@ -98,4 +100,29 @@
 .genres {
   display: flex;
   gap: 10px;
+  align-items: center;
+}
+
+.genre-details {
+  width: 84px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #be123c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  .title-genre {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .single-movie {
+    flex-direction: column;
+  }
 }

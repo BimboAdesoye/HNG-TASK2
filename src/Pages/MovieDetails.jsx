@@ -74,10 +74,10 @@ const MovieDetails = () => {
             <p data-testid="movie-title" className="movie-details-title">
               {title}
             </p>
-            <div>
+            <div className="genres">
               {genres?.map((genre) => {
                 return (
-                  <div key={id} >
+                  <div key={id} className="genre-details">
                     <p className="genres">{genre.name}</p>
                   </div>
                 );
@@ -87,7 +87,7 @@ const MovieDetails = () => {
           <div className="extra-details">
             <p data-testid="movie-release-date" className="movie-release-date">
               <span>Release Date: </span>
-              {release_date}m
+              {release_date}
             </p>
             <p data-testid="movie-runtime" className="movie-runtime">
               <span>Runtime: </span>

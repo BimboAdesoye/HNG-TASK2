@@ -1,22 +1,18 @@
-import { useState } from "react";
+// import { useState } from "react";
 import SearchIcon from "../assets/Search.svg";
 import "../styles/SearchBar.css";
 
-const SearchBar = ({ onSearch }) => {
-  const [query, setQuery] = useState("");
-  const handleSearch = () => {
-    onSearch(query);
-  };
+const SearchBar = ({ searchKey, searchMovies, setSearchKey }) => {
   return (
     <div className="search-bar">
-      <form action="" onSubmit={handleSearch} className="flex justify-between">
+      <form onSubmit={searchMovies} className="flex justify-between">
         <input
           type="text"
+          value={searchKey}
           placeholder="What do you want to watch?"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => setSearchKey(e.target.value)}
         />
-        <img className="search-icon" src={SearchIcon} alt="search-icon" />
+      <img className="search-icon" src={SearchIcon} alt="search-icon" />
       </form>
     </div>
   );

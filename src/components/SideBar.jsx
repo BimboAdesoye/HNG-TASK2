@@ -17,10 +17,12 @@ const SideBar = () => {
         </div>
       </Link>
       <div className="tabs">
-        <div className="flex">
-          <img src={home} alt="" />
-          <p>Home</p>
-        </div>
+        <Link to={"/"} className="text-decoration-none">
+          <div className="flex">
+            <img src={home} alt="" />
+            <p>Home</p>
+          </div>
+        </Link>
         <div className="flex active">
           <img src={movie} alt="" />
           <p>Movies</p>

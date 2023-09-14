@@ -1,7 +1,7 @@
 /* SideBar */
 
 .sidebar {
-  height: 100vh;
+  height: fit-content;
   min-width: 226px;
   border-top-right-radius: 45px;
   border-bottom-right-radius: 45px;
@@ -90,10 +90,61 @@
 
 .active {
   background: rgba(190, 18, 60, 0.1);
+  border-right: 6px solid #be123c;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media screen and (max-width: 768px) {
   .sidebar {
+    display: flex;
+    border-radius: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+    justify-content: space-between;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  .tabs div {
+    width: fit-content;
+    padding: 0;
+    height: 30px;
+  }
+
+  .log-out {
+   display: none;
+  }
+
+  .tabs div img,
+  .log-out img {
     display: none;
   }
+
+  .logo p {
+    display: none;
+  }
+
+  .start-playing {
+    display: none;
+  }
+
+  .active {
+  background: none;
+  border-right: none;
+}
 }

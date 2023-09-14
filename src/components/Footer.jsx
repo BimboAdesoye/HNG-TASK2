@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
           <div>
             <p className="text-base">
-              © 2021 MovieBox by Adriana Eka Prayudha{" "}
+              © 2021 MovieBox by Bimbo_Adesoye
             </p>
           </div>
         </div>
