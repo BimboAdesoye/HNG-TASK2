@@ -6,7 +6,7 @@ import heartactive from "../assets/Heart.svg";
 import redHeartIcon from "../assets/icons8-heart-suit-48.png";
 
 const MovieCard = ({ data, toggleFavorite, favorites }) => {
-  const { poster_path, id } = data;
+  const { poster_path, id, title } = data;
   const image_path = " https://image.tmdb.org/t/p/w500";
 
   const isFavorite = favorites[id] || false;
@@ -23,7 +23,7 @@ const MovieCard = ({ data, toggleFavorite, favorites }) => {
             <img
               className="movie-cover"
               src={`${image_path}/${data.poster_path}`}
-              alt="movie title"
+              alt={title}
               data-testid="movie-poster"
             />
           </Link>

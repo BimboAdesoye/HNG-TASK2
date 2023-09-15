@@ -50,6 +50,12 @@ const MovieDetails = () => {
           <p>Loading...</p>
         </div>
       )}
+      {error && (
+        <div className="error">
+          <p>Failed to fetch data from the api...</p>
+          <p>Refresh the Page</p>
+        </div>
+      )}
       <SideBar />
       <div className="movie-details">
         {backdrop_path ? (

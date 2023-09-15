@@ -83,7 +83,7 @@
   font-weight: 700;
 }
 
-.loading {
+.loading, .error {
   position: absolute;
   inset: 0;
   background-color: #be123c;
