@@ -28,10 +28,6 @@ const MovieDetails = () => {
     }
   };
 
-  // useEffect(() => {
-  //   console.log(data);
-  // }, [data]);
-
   useEffect(() => {
     getFetchedData();
   }, []);
@@ -40,8 +36,6 @@ const MovieDetails = () => {
 
   const { backdrop_path, runtime, release_date, overview, title, genres } =
     data;
-
-  // console.log(backdrop_path);
 
   return (
     <div className="single-movie">
@@ -92,15 +86,12 @@ const MovieDetails = () => {
           </div>
           <div className="extra-details">
             <p data-testid="movie-release-date" className="movie-release-date">
-              <span>Release Date: </span>
               {release_date}
             </p>
             <p data-testid="movie-runtime" className="movie-runtime">
-              <span>Runtime: </span>
               {runtime}m
             </p>
             <p data-testid="movie-overview" className="movie-overview">
-              <span>Overview: </span>
               {overview}
             </p>
           </div>

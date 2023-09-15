@@ -6,7 +6,7 @@ import heartactive from "../assets/Heart.svg";
 import redHeartIcon from "../assets/icons8-heart-suit-48.png";
 
 const MovieCard = ({ data, toggleFavorite, favorites }) => {
-  const { poster_path, id, title } = data;
+  const { poster_path, id, title, genre_ids } = data;
   const image_path = " https://image.tmdb.org/t/p/w500";
 
   const isFavorite = favorites[id] || false;
@@ -40,7 +40,7 @@ const MovieCard = ({ data, toggleFavorite, favorites }) => {
       </div>
       <div className="card-details">
         <p className="release-date" data-testid="movie-release-date">
-          Release Date (UTC): {data.release_date}
+          {data.release_date}
         </p>
         <h5 className="movie-title" data-testid="movie-title">
           {data.title}
@@ -55,8 +55,6 @@ const MovieCard = ({ data, toggleFavorite, favorites }) => {
             <p className="tomato-rating">97%</p>
           </span>
         </div>
-        {/* <p className="genre">Action, Adventure, Horror</p> */}
-        <p className="genre">{data.genre_ids}</p>
       </div>
     </div>
   );
