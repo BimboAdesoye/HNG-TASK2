@@ -60,7 +60,7 @@
   height: 19.474px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .movie-card {
     width: 250px;
   }

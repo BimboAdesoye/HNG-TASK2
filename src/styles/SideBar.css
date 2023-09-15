@@ -1,4 +1,3 @@
-/* SideBar */
 
 .sidebar {
   height: fit-content;
@@ -108,6 +107,7 @@
     justify-content: space-between;
     margin-inline: auto;
     align-items: center;
+    border: none;
   }
 
   .logo {

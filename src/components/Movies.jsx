@@ -3,7 +3,7 @@ import chevronIcon from "../assets/Chevron right.svg";
 import UseFetch from "../Hooks/UseFetch";
 import MovieCard from "./MovieCard";
 import { useState } from "react";
-import SearchBar from "./SearchBar";
+// import SearchBar from "./SearchBar";
 
 const Movies = () => {
   const [favorites, setFavorites] = useState({});
@@ -25,10 +25,10 @@ const Movies = () => {
     }));
   };
 
-  const searchMovies = (e) => {
-    e.preventDefault();
-    getFetchedData(searchKey);
-  };
+  // const searchMovies = (e) => {
+  //   e.preventDefault();
+  //   getFetchedData(searchKey);
+  // };
 
   return (
     <section className="movies">
